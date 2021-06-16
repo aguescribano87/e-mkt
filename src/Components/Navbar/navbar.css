@@ -1,0 +1,19 @@
+.navbar {
+  background-color: lightgoldenrodyellow;
+  margin: 10px;
+  border-radius: 10px;
+  display: flex;
+
+}
+
+.navbar-menu{
+  display: flex;
+}
+
+.navbar-menu li{
+  list-style: none;
+  flex-direction: row;
+  margin: 0 10px;
+  
+}
+

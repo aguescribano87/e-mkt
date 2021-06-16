@@ -1,11 +1,16 @@
 import './App.css';
-import {Home} from "./Pages/Home/home"
+import {NavBar} from "./Components/Navbar/navbar"
+import {ItemListConteiner} from "./Components/ItemListConteiner/ItemListConteiner"
 
 function App() {
+  const greeting = "Bienvenidos a E-MARKET"
+  
   return (
-    <div>
-      <Home/>
-    </div>
+    <>
+      <NavBar/>
+      <ItemListConteiner saludo={greeting}/>
+            
+    </>
   );
 }
 
