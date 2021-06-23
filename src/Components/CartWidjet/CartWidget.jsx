@@ -1,10 +1,10 @@
 import React from "react"
-import "./CartWidjet.css"
+import "./CartWidget.css"
 
-function CartWidjet() {
+function CartWidget() {
     return (
         <button className="iconoCarrito"></button>
     )
 }
 
-export {CartWidjet}
+export {CartWidget}

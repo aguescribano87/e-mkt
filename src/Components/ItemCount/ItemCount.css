@@ -1,0 +1,33 @@
+.itemCountConteiner{
+    display: flex;
+    flex-direction: row;
+    border-style:groove;
+    width: 150px;
+    height: 50px;
+    justify-content: space-around;
+    
+    
+}
+.itemCountButton{
+    background-color: transparent;
+    border-color: transparent;
+    align-items: center;
+    color: red;
+    font-size: 15px;
+    font-size: 30px;
+}
+.itemCountSpan{
+    display:block;
+    text-align: center;
+    font-size: 30px;
+    
+}
+.btnAgregar{
+    width: 150px;
+    height: 50px;
+    background-color: transparent;
+    border-color: red;
+    border-style:groove;
+    font-size: 15px;
+    
+}
