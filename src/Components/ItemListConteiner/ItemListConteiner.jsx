@@ -6,7 +6,10 @@ import { useState } from "react"
 
 function ItemListConteiner({saludo}) {
     const [item, setItem] = useState([])
-
+    
+    const mensaje = (c)=> alert(`Se agregaron ${c} productos al carrito`)
+    
+    //desafio MAP & PROMISE
     const getItem = new Promise((resolve, reject)=>{
         setTimeout(() => {
             resolve(
@@ -33,7 +36,7 @@ function ItemListConteiner({saludo}) {
     return (
         <div>
             <p>{saludo}</p>
-            <ItemCount initial="1" stock="5" />
+            <ItemCount onAdd={mensaje} initial="1" stock="5" />
             <ItemList items={item} />
         </div>
         

@@ -2,7 +2,7 @@ import React from "react"
 import { useState } from "react"
 import "./ItemCount.css"
 
-export const ItemCount = ({stock,initial})=>{
+export const ItemCount = ({stock,initial,onAdd})=>{
     const [contador, setContador] = useState(initial)
     const [nuevoStock, setNuevoStock] =useState(stock)
 
@@ -22,10 +22,6 @@ export const ItemCount = ({stock,initial})=>{
 
     }   
     
-    function agregar(){
-        alert(`Se agregaron ${contador} productos al carrito`)
-    }
-
     return(
         <div>
 
@@ -35,7 +31,7 @@ export const ItemCount = ({stock,initial})=>{
             <button onClick={sumar} className="itemCountButton">+</button>
         </div>
 
-        <button onClick={agregar} className="btnAgregar">Agregar al Carrito</button>
+        <button onClick={()=>onAdd(contador)} className="btnAgregar">Agregar al Carrito</button>
         </div>
         )
         
