@@ -20,7 +20,7 @@ function ItemListConteiner({saludo}) {
         })
         getItem.then((item)=>{
             setItem(item)
-            console.log(item)
+            
         })
     },[])
 

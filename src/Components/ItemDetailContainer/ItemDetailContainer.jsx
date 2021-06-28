@@ -3,9 +3,9 @@ import { useState, useEffect } from "react"
 import {ItemDetail} from "../ItemDetail/ItemDetail"
 import { Productos } from "../../productos"
 
-export const ItemDetailContainer= ({saludo})=>{
-    const [items, setItems] = useState([])
-    
+export const ItemDetailContainer= ()=>{
+    const [filtrarItem, setFiltrarItem] = useState([])
+
     useEffect(()=>{
         const getItems = new Promise((resolve, reject)=>{
             setTimeout(() => {
@@ -13,18 +13,15 @@ export const ItemDetailContainer= ({saludo})=>{
             }, 2000);
         })
         getItems.then((item)=>{
-            setItems(item)
+            setFiltrarItem(item.find(i => i.id === 1))
         })
-
+        
     },[])
 
+    
     return(
         <div>
-            {items.filter((i)=> i.id === 1)
-                  .map((i)=><ItemDetail item={i}/>)  
-            }
-            
-            
+            <ItemDetail item={filtrarItem}/>
         </div>
     )
 }
