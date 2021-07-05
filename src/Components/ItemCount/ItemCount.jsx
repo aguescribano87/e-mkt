@@ -24,7 +24,7 @@ export const ItemCount = ({stock,initial,onAdd})=>{
     
     return(
         <div div className="conteiner">
-
+            <p className="cantidad">Cantidad: {stock}</p>
         <div className="itemCountConteiner">
             <button onClick={restar} className="itemCountButton">-</button>
             <span className="itemCountSpan">{contador}</span>

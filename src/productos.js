@@ -16,7 +16,8 @@ export const Productos = [{
     
     Apto para fácil traslado
     Navegá rápidamente por documentos y páginas web gracias su diseño ultra delgado, ergonómico, liviano y conveniente para llevar a donde quieras o viajar.`,
-    categoria: "mouses"
+    categoria: "mouses",
+    stock:10
     },
     {
     id: "2",
@@ -36,7 +37,8 @@ export const Productos = [{
     
     Apto para fácil traslado
     Navegá rápidamente por documentos y páginas web gracias su diseño ultra delgado, ergonómico, liviano y conveniente para llevar a donde quieras o viajar.`,
-    categoria: "mouses"
+    categoria: "mouses",
+    stock:15
 },
     {
     id: "3",
@@ -56,7 +58,8 @@ export const Productos = [{
     
     Apto para fácil traslado
     Navegá rápidamente por documentos y páginas web gracias su diseño ultra delgado, ergonómico, liviano y conveniente para llevar a donde quieras o viajar.`,
-    categoria: "mouses"
+    categoria: "mouses",
+    stock:8
 },
 {
     id: "4",
@@ -70,7 +73,8 @@ export const Productos = [{
     
     Tecnología antighosting
     Este dispositivo tiene teclas antighosting. Esta cualidad es indispensable si requerís de un uso intensivo del periférico. Gracias a esto podrás evitar fallas al tocar varias teclas al mismo tiempo.`,
-    categoria: "teclados"  
+    categoria: "teclados",
+    stock:5 
 },
 {
     id: "5",
@@ -81,7 +85,8 @@ export const Productos = [{
 
     Distinción a todo color
     Su retroiluminación le da un toque diferente a tu equipo y resalta su composición cuando es utilizado en espacios poco iluminados.`,
-    categoria: "teclados"  
+    categoria: "teclados",
+    stock:9
 },
 {
     id: "6",
@@ -95,7 +100,8 @@ export const Productos = [{
     
     Tecnología antighosting
     Este dispositivo tiene teclas antighosting. Esta cualidad es indispensable si requerís de un uso intensivo del periférico. Gracias a esto podrás evitar fallas al tocar varias teclas al mismo tiempo.`,
-    categoria: "teclados"  
+    categoria: "teclados",
+    stock:12 
 },
 {
     id: "7",
@@ -106,7 +112,8 @@ export const Productos = [{
 
     El formato perfecto para vos
     Al ser headset podrás escuchar tu música preferida, mantener llamadas telefónicas y jugar en línea desde tu PC sin perderte ningún detalle.`,
-    categoria: "auriculares"
+    categoria: "auriculares",
+    stock:6
 },
 {
     id: "8",
@@ -117,7 +124,8 @@ export const Productos = [{
 
     El formato perfecto para vos
     Al ser headset podrás escuchar tu música preferida, mantener llamadas telefónicas y jugar en línea desde tu PC sin perderte ningún detalle.`,
-    categoria: "auriculares"
+    categoria: "auriculares",
+    stock:10
 },
 {
     id: "9",
@@ -128,7 +136,8 @@ export const Productos = [{
 
     El formato perfecto para vos
     Al ser headset podrás escuchar tu música preferida, mantener llamadas telefónicas y jugar en línea desde tu PC sin perderte ningún detalle.`,
-    categoria: "auriculares"
+    categoria: "auriculares",
+    stock:11
 }
 
 ]

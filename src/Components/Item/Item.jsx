@@ -6,6 +6,7 @@ export const Item = ({items})=>{
     
     return (
         <div className="itemContainer">
+            
             <NavLink className="navLink" to={`/item/${items.id}`}>
             <div className="img-container">
             <img className="imagen" src={items.pictureUrl} alt="foto" />
@@ -14,6 +15,7 @@ export const Item = ({items})=>{
             <p className="titulo">{items.title}</p>
             <p className="precio">${items.price}</p>
             </NavLink>
+            
         </div>
     )
 }

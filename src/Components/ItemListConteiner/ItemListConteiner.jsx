@@ -4,14 +4,15 @@ import { useState, useEffect } from "react"
 import { Productos } from "../../productos"
 import { useParams } from "react-router-dom"
 import "./itemListConteiner.css"
+import { Loader } from "../loader/Loader"
 
 
 function ItemListConteiner() {
-    const [item, setItem] = useState([])
-    const {id} = useParams()
+    const [item, setItem] = useState()
+    const {id} = useParams(undefined)
 
     useEffect(()=>{
-
+        setItem(undefined)
         const getItem = new Promise((resolve, reject)=>{
             setTimeout(() => {
                 resolve(id ? Productos.filter(cat => cat.categoria === id): Productos)
@@ -25,7 +26,7 @@ function ItemListConteiner() {
     
     return (
         <div className="contenedor">
-            <ItemList items={item} />
+            {item ? <ItemList items={item} /> : <Loader />}
         </div>
         
     )
