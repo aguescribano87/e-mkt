@@ -1,19 +1,24 @@
 .navbar {
-  background-color: lightgoldenrodyellow;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: lightgrey;
   margin: 10px;
-  border-radius: 10px;
+  border-radius: 15px;
+}
+
+.navbar .menu{
+  padding: 0;
   display: flex;
-
+  justify-content: center;
+  align-items: center;
+  list-style-type: none;
 }
 
-.navbar-menu{
-  display: flex;
+.navbar .item{
+  margin: 0 4px;
 }
 
-.navbar-menu li{
-  list-style: none;
-  flex-direction: row;
-  margin: 0 10px;
-  
+.navbar .logo{
+  margin: 0 4px;
 }
-

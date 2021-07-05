@@ -1,11 +1,3 @@
-.iconoCarrito{
-    background-image:url("../../img/carrito.png"); 
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-origin: border-box;
-    background-color: lightgoldenrodyellow;
-    border-radius: 10%;
-    padding:0px 30px;
-    border: transparent;
-    
+.carrito{
+    margin: 0 4px;
 }

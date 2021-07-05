@@ -23,7 +23,7 @@ export const ItemCount = ({stock,initial,onAdd})=>{
     }   
     
     return(
-        <div>
+        <div div className="conteiner">
 
         <div className="itemCountConteiner">
             <button onClick={restar} className="itemCountButton">-</button>
@@ -31,7 +31,7 @@ export const ItemCount = ({stock,initial,onAdd})=>{
             <button onClick={sumar} className="itemCountButton">+</button>
         </div>
 
-        <button onClick={()=>onAdd(contador)} className="btnAgregar">Agregar al Carrito</button>
+        <button onClick={()=>onAdd(contador)} className="btnAgregar">Agregar</button>
         </div>
         )
         

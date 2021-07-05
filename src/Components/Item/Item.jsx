@@ -1,15 +1,19 @@
 import React from "react"
-
+import {NavLink} from "react-router-dom"
+import "./item.css"
 
 export const Item = ({items})=>{
-
-    
     
     return (
-        <div>
-            <img src={items.pictureUrl} alt="foto" />
-            <h2>cod:{items.id} {items.title}</h2>
-            <p>${items.price}</p>
+        <div className="itemContainer">
+            <NavLink className="navLink" to={`/item/${items.id}`}>
+            <div className="img-container">
+            <img className="imagen" src={items.pictureUrl} alt="foto" />
+            </div>
+            <hr className="linea"/>
+            <p className="titulo">{items.title}</p>
+            <p className="precio">${items.price}</p>
+            </NavLink>
         </div>
     )
 }

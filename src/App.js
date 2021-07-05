@@ -2,18 +2,32 @@ import './App.css';
 import {NavBar} from "./Components/Navbar/navbar"
 import {ItemListConteiner} from "./Components/ItemListConteiner/ItemListConteiner"
 import {ItemDetailContainer} from "./Components/ItemDetailContainer/ItemDetailContainer"
+import React from "react"
+import {BrowserRouter as Router,Switch,Route} from "react-router-dom"
+
 
 function App() {
-  const greeting = "Bienvenidos a E-MARKET"
-  const greeting2 = "Item Detail Container"
+ 
 
   return (
-    <>
-      <NavBar/>
-      <ItemListConteiner saludo={greeting}/>
-      <ItemDetailContainer saludo={greeting2}/>
-            
-    </>
+    <Router>
+      <>
+        <NavBar />
+        <Switch>
+          <Route exact path="/">
+            <ItemListConteiner />
+          </Route>
+          <Route path="/category/:id">
+            <ItemListConteiner />
+          </Route>
+          <Route path="/item/:id">
+            <ItemDetailContainer />
+          </Route>
+          
+        </Switch>
+      </>
+    </Router>
+    
   );
 }
 
