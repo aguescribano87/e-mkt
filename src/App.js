@@ -1,6 +1,6 @@
 import './App.css';
 import {NavBar} from "./Components/Navbar/navbar"
-import {ItemListConteiner} from "./Components/ItemListConteiner/ItemListConteiner"
+import {ItemListContainer} from "./Components/ItemListContainer/ItemListContainer"
 import {ItemDetailContainer} from "./Components/ItemDetailContainer/ItemDetailContainer"
 import {Cart} from "./Components/cart/Cart"
 import React from "react"
@@ -17,10 +17,10 @@ function App() {
         
         <Switch>
           <Route exact path="/">
-            <ItemListConteiner />
+            <ItemListContainer />
           </Route>
           <Route path="/category/:id">
-            <ItemListConteiner />
+            <ItemListContainer />
           </Route>
           <Route path="/item/:id">
             <ItemDetailContainer />

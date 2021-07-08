@@ -3,20 +3,20 @@ import {ItemList} from "../ItemList/ItemList"
 import { useState, useEffect } from "react"
 import { Productos } from "../../productos"
 import { useParams } from "react-router-dom"
-import "./itemListConteiner.css"
+import "./itemListContainer.css"
 import { Loader } from "../loader/Loader"
 
 
-function ItemListConteiner() {
+function ItemListContainer() {
     const [item, setItem] = useState()
-    const {id} = useParams(undefined)
+    const {id} = useParams()
 
     useEffect(()=>{
-        setItem(undefined)
+        setItem()
         const getItem = new Promise((resolve, reject)=>{
             setTimeout(() => {
                 resolve(id ? Productos.filter(cat => cat.categoria === id): Productos)
-            }, 2000);
+            }, 1000);
         })
         getItem.then((item)=>{
             setItem(item)
@@ -25,11 +25,11 @@ function ItemListConteiner() {
     },[id])
     
     return (
-        <div className="contenedor">
-            {item ? <ItemList items={item} /> : <Loader />}
-        </div>
+        <>
+            {item ? <div className="contenedor"> <ItemList items={item} /> </div>: <div className="contenedor-loader"> <Loader/></div>}
+        </>
         
     )
 }
 
-export {ItemListConteiner}
+export {ItemListContainer}
