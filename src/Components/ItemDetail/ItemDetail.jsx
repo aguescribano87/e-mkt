@@ -15,7 +15,9 @@ export const ItemDetail= ({item})=>{
             {id: item.id,
             title: item.title,
             price: item.price,
-            quantity: parseInt(c)})
+            quantity: parseInt(c),
+            pictureUrl: item.pictureUrl,
+            subTotal: (item.price * c)})
      
     }
 

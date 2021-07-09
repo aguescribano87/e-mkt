@@ -26,7 +26,7 @@ function ItemListContainer() {
     
     return (
         <>
-            {item ? <div className="contenedor"> <ItemList items={item} /> </div>: <div className="contenedor-loader"> <Loader/></div>}
+            {item ? <div className="contenedor"> <ItemList items={item} /> </div>: <Loader/>}
         </>
         
     )

@@ -9,7 +9,7 @@ function NavBar() {
         
         <nav className="navbar">
             <Link to="/">
-            <h1 className="logo">e-mkt</h1>
+                <h1 className="logo">e-mkt</h1>
             </Link>
             <ul className="menu">
                 {categorias.map((cat)=>

@@ -23,7 +23,7 @@ export const ItemDetailContainer= ()=>{
         
     },[id])
      
-    return filtrarItem ? filtrarItem.map(i => <div><ItemDetail item={i}/></div>) : <div className="contenedor-loader"><Loader /></div>
+    return filtrarItem ? filtrarItem.map(i => <div><ItemDetail item={i}/></div>) : <Loader />
   
        
     

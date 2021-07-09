@@ -6,7 +6,7 @@ a{
 
 .itemContainer{
     display: inline-block;
-    border: solid 1px #ebebeb;
+    border: solid 1px black;
     background-color: white;
     width: 300px ;
     height: 350px ;
@@ -23,7 +23,7 @@ a{
     text-align: center;
 }
 .linea{
-    border: solid 2px #ebebeb
+    border: solid 1px black
     
 }
 .img-container .imagen{
@@ -43,6 +43,7 @@ a{
     -webkit-line-clamp: 1;
     text-align:left;
     font-size: 18px;
+    margin-left: 5px;
 }
 
 .precio{
