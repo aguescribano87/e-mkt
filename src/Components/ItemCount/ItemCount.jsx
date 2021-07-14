@@ -1,6 +1,8 @@
 import React from "react"
 import { useState } from "react"
 import "./ItemCount.css"
+import  remove  from "../../img/remove.png"
+import  add  from "../../img/add.png"
 
 export const ItemCount = ({stock,initial,onAdd})=>{
     const [contador, setContador] = useState(initial)
@@ -23,16 +25,16 @@ export const ItemCount = ({stock,initial,onAdd})=>{
     }   
     
     return(
-        <div div className="conteiner">
-            <p className="cantidad">Cantidad: {stock}</p>
+        <>
+            <p className="cantidad">Stock: {stock}</p>
         <div className="itemCountConteiner">
-            <button onClick={restar} className="itemCountButton">-</button>
+            <img src={remove} alt="remove" onClick={restar} className="itemCountButton"/>
             <span className="itemCountSpan">{contador}</span>
-            <button onClick={sumar} className="itemCountButton">+</button>
+            <img src={add} alt="add" onClick={sumar} className="itemCountButton"/>
         </div>
 
-        <button onClick={()=>onAdd(contador)} className="btnAgregar">Agregar</button>
-        </div>
+        <button onClick={()=>onAdd(contador)} className="btnAgregar">Agregar al Carrito</button>
+        </>
         )
         
 }

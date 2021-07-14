@@ -1,7 +1,7 @@
 import firebase from "firebase";
 import "firebase/firestore"
 
-var firebaseConfig = {
+const firebaseConfig = {
     apiKey: "AIzaSyBDbiXL7MG2Erjm2K8bTJViJLds-FES4cs",
     authDomain: "e-mkt-aff75.firebaseapp.com",
     projectId: "e-mkt-aff75",
@@ -12,4 +12,4 @@ var firebaseConfig = {
 
   const fb = firebase.initializeApp(firebaseConfig)
 
-  export const dataBase = fb.firestore
+  export const dataBase = fb.firestore()

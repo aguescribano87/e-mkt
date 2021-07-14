@@ -13,6 +13,7 @@
     font-weight: bold;
     font-size: 18px;
     border-left: solid 5px black;
+    border-right: solid 5px black;
     height: 90px;
     
 }
@@ -29,13 +30,14 @@
     margin-right: 20px;
     margin-top: 10px;
     margin-bottom: 5px;
-    background-color: rgba(0, 0, 0, 0.89);
+    background-color: darkgray;
     border-radius: 10px;
     font-weight: bold;
     font-size: 18px;
     border-left: solid 5px rgb(90, 89, 89);
+    border-right: solid 5px rgb(90, 89, 89);
     height: 90px;
-    color: white;
+    
 }
 
 .imagen-item-carrito{
@@ -44,7 +46,7 @@
     object-fit: contain;
 }
 
-.logo{
+.logo-carrito{
     color: black;
     font-family:monospace;
     border-radius: 10px;
@@ -54,8 +56,21 @@
     transition: 1s;
   }
   
-  .logo:hover{
+  .logo-carrito:hover{
     color: white;
-    background-color: rgb(90, 89, 89);
+    background-color: rgba(0, 0, 0, 0.89);
     transition: 1s;
+  }
+
+  .title-carrito{
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: normal;
+    -webkit-line-clamp: 1;
+    text-align:left;
+    font-size: 18px;
+    margin-left: 5px;
+    
   }

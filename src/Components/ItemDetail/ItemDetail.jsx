@@ -23,7 +23,7 @@ export const ItemDetail= ({item})=>{
 
     return( 
         
-        <div>
+        <div className="conteiner">
          
             <img src={item.pictureUrl} alt="foto" />
             <h1>{item.title}</h1>

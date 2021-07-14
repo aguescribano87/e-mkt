@@ -1,7 +1,7 @@
 import React from "react"
 import { useState, useEffect } from "react"
 import {ItemDetail} from "../ItemDetail/ItemDetail"
-import { Productos } from "../../productos"
+import { dataBase } from '../../Firebase/firebase'
 import { useParams } from "react-router-dom"
 import { Loader } from "../loader/Loader"
 import  "./ItemDetailContainer.css"
@@ -11,20 +11,22 @@ export const ItemDetailContainer= ()=>{
     const {id} = useParams()
 
     useEffect(()=>{
-        const getItems = new Promise((resolve, reject)=>{
-            setTimeout(() => {
-                resolve(id ? Productos.filter(i => i.id === id): Productos)
-            }, 1000);
+        const db = dataBase
+        const itemCollection = db.collection("productos")
+        const item = itemCollection.doc(id)
+
+        item.get().then((doc)=>{
+            if(!doc.exists){
+                console.log("item no encontrado")
+                return
+            }
+            console.log("item encontrado")
+            setFiltrarItem({...doc.data(),id: doc.id})
         })
-        getItems.then((item)=>{
-            setFiltrarItem(item)
-            
-        })
+
         
     },[id])
      
-    return filtrarItem ? filtrarItem.map(i => <div><ItemDetail item={i}/></div>) : <Loader />
-  
-       
-    
+    return filtrarItem ? <div><ItemDetail item={filtrarItem}/></div> : <Loader />
+   
 }

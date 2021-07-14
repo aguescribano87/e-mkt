@@ -12,17 +12,17 @@ export const Cart = ()=> {
             {compra.length !== 0 ? compra.map((comp)=>
                                 <div className="contenedor-item-carrito">
                                     <img className="imagen-item-carrito" src={comp.pictureUrl} alt="foto" />
-                                    <p>{comp.title}</p>
-                                    <p>{`Qty:( ${comp.quantity} ) `}</p>
+                                    <p className="title-carrito">{comp.title}</p>
+                                    <p>{`( ${comp.quantity} ) `}</p>
                                     <p>{`$ ${comp.subTotal}`}</p>
                                     <img src={trash} alt="trash" onClick={()=>removeItem(comp)}/>
                                 </div>):<p className="carrito-vacio">{`Tu CARRITO esta vacio hace "click" en nuestro logo para ver el catálogo`}</p>}
             <div className="contenedor-botones">
             <Link to="/">
-                <h1 className="logo">e-mkt</h1>
+                <h1 className="logo-carrito">e-mkt</h1>
             </Link>
             {compra.length !== 0 ? <button onClick={()=>clearCart()}>Limpiar Carrito</button>:""}
-            {compra.length !== 0 ? <p>{`Total de Compra: $ ${total}`}</p>:""}    
+            {compra.length !== 0 ? <p>{`Total: $${total}`}</p>:""}    
             {compra.length !== 0 ? <button>Comprar</button>:""}
             </div>
         </div>
