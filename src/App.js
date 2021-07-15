@@ -5,7 +5,7 @@ import {ItemDetailContainer} from "./Components/ItemDetailContainer/ItemDetailCo
 import {Cart} from "./Components/cart/Cart"
 import React from "react"
 import {BrowserRouter as Router,Switch,Route} from "react-router-dom"
-
+import {CheckOut} from "./Components/checkOut/checkOut"
 
 function App() {
  
@@ -27,6 +27,9 @@ function App() {
           </Route>
           <Route path="/cart">
             <Cart />
+          </Route>
+          <Route path="/checkout">
+            <CheckOut />
           </Route>
           
         </Switch>

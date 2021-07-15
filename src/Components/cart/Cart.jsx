@@ -8,7 +8,7 @@ export const Cart = ()=> {
     const {compra, removeItem, clearCart, total} = useContext(CartContext)
 
     return (
-        <div>
+        <>
             {compra.length !== 0 ? compra.map((comp)=>
                                 <div className="contenedor-item-carrito">
                                     <img className="imagen-item-carrito" src={comp.pictureUrl} alt="foto" />
@@ -23,8 +23,8 @@ export const Cart = ()=> {
             </Link>
             {compra.length !== 0 ? <button onClick={()=>clearCart()}>Limpiar Carrito</button>:""}
             {compra.length !== 0 ? <p>{`Total: $${total}`}</p>:""}    
-            {compra.length !== 0 ? <button>Comprar</button>:""}
+            {compra.length !== 0 ? <Link to="/checkout"><button>Comprar</button></Link>:""}
             </div>
-        </div>
+        </>
     )
 }

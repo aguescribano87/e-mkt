@@ -7,17 +7,19 @@ import "./itemListContainer.css"
 import { Loader } from "../loader/Loader"
 
 
-function ItemListContainer() {
+export const ItemListContainer = ()=> {
     const [item, setItem] = useState()
     const {id} = useParams()
 
    useEffect(()=>{
        const db = dataBase
-       const itemCollection = db.collection("productos")
-       
+        
        if (id !== undefined) {
-        const filtrarCat = itemCollection.where("categoria","==",id) 
-        filtrarCat.get().then((collection)=>{
+            db.collection("productos")
+            .where("categoria","==",id)
+            .where("stock",">",0)
+            .get()
+            .then((collection)=>{
             if (collection === 0){
                 console.log("no hay resultados")
             }
@@ -29,7 +31,10 @@ function ItemListContainer() {
             console.log("error al buscar los items",error)
         })
        }else{
-           itemCollection.get().then((collection)=>{
+                db.collection("productos")
+                .where("stock",">",0)
+                .get()
+                .then((collection)=>{
                if (collection === 0){
                    console.log("no hay resultados")
                }
@@ -46,4 +51,3 @@ function ItemListContainer() {
      
 }
 
-export {ItemListContainer}

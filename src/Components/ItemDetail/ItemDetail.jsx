@@ -17,7 +17,8 @@ export const ItemDetail= ({item})=>{
             price: item.price,
             quantity: parseInt(c),
             pictureUrl: item.pictureUrl,
-            subTotal: (item.price * c)})
+            subTotal: (item.price * c),
+            stock: item.stock})
      
     }
 

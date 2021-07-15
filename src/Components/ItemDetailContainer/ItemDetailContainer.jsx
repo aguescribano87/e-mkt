@@ -22,7 +22,9 @@ export const ItemDetailContainer= ()=>{
             }
             console.log("item encontrado")
             setFiltrarItem({...doc.data(),id: doc.id})
-        })
+        }).catch((error)=>{
+            console.log("error al buscar los items",error)
+        }) 
 
         
     },[id])
