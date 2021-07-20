@@ -1,0 +1,47 @@
+.contedor-check{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.contenedor-usuario{
+    display: flex;
+    flex-direction: column;
+    border: solid 1px black;
+    width: 35%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    float: left;
+}
+.contenedor-compra{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+}
+.contenedor-items-compra{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border: solid 1px black;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    float: right;
+    background-color: white;
+}
+
+.img-compra{
+    height: 60px;
+    width: 60px;
+    object-fit: contain;
+}
+.total-compra{
+    float: right;
+}
+
+.boton-compra{
+    position: absolute;
+    margin-top:100px ;
+}
+

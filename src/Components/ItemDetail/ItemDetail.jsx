@@ -5,20 +5,16 @@ import {CartContext} from "../../Context/cartContext"
 
 export const ItemDetail= ({item})=>{
     const [quantity, setQuantity] = useState()
-   
     const {agregar} = useContext(CartContext)
 
     const onAdd = (c)=> {
         setQuantity(c)
         
         agregar (
-            {id: item.id,
-            title: item.title,
-            price: item.price,
+            {...item,
             quantity: parseInt(c),
-            pictureUrl: item.pictureUrl,
-            subTotal: (item.price * c),
-            stock: item.stock})
+            subTotal: (item.price * c)
+            })
      
     }
 
@@ -29,7 +25,7 @@ export const ItemDetail= ({item})=>{
             <img src={item.pictureUrl} alt="foto" />
             <h1>{item.title}</h1>
             <h2>${item.price}</h2>
-            {quantity ? <NavLink to="/cart"><button>Terminar Compra</button></NavLink>  : <ItemCount onAdd={onAdd} stock={item.stock} initial={1}/> }
+            {quantity ? <NavLink to="/cart"><button>Terminar Compra</button></NavLink> : <ItemCount onAdd={onAdd} stock={item.stock} initial={1}/> }
             
             <p>{item.description}</p>
              

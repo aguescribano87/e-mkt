@@ -1,0 +1,15 @@
+.contenedor-cartCounter{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border: solid 2px black;
+    width: 70px;
+    height: 30px;
+    border-radius: 10px;
+}
+
+.btn-cartCounter:active{
+    border-radius: 50%;
+    background-color:lightgray ;
+}

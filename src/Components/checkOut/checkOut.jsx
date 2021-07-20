@@ -1,6 +1,7 @@
 import React, {useContext, useState,} from "react"
 import { dataBase } from '../../Firebase/firebase'
 import {CartContext} from "../../Context/cartContext"
+import "./checkOut.css"
 
 export const CheckOut = ()=>{
     const [name, setName] = useState()
@@ -42,14 +43,27 @@ export const CheckOut = ()=>{
 
     return (
         <>
-            Ya casi es Tuyo !!!
-
-            <div>
-            <input onChange={(e)=>setName(e.target.value)} type="text" placeholder="Nombre" />
-            <input onChange={(e)=>setPhone(e.target.value)} type="number" placeholder="Telefono" />
-            <input onChange={(e)=>setMail(e.target.value)} type="mail" placeholder="Email" />
+        <p>Estas a un solo paso de FINALIZAR tu compra !!!</p>
+            <div className="contedor-check">
+            <div className="contenedor-usuario">
+                <input onChange={(e)=>setName(e.target.value)} type="text" placeholder="Nombre" />
+                <input onChange={(e)=>setPhone(e.target.value)} type="number" placeholder="Telefono" />
+                <input onChange={(e)=>setMail(e.target.value)} type="mail" placeholder="Email" />
             </div>
-            <button onClick={()=>nuevaOrden()}>Finalizar Compra</button>
+            <div className="contenedor-compra">
+            {compra.map(comp => 
+                <div className="contenedor-items-compra">
+                    <img className="img-compra" src={comp.pictureUrl} alt="foto" />
+                    <p className="titulo-compra">{comp.title}</p>
+                    <p>{`( ${comp.quantity} ) `}</p>
+                    <p>{`$ ${comp.subTotal}`}</p>
+                </div>
+)
+}          </div>
+        </div >
+            <p className="total-compra">Total: ${total}</p>
+            <button className="boton-compra" onClick={()=>nuevaOrden()}>Finalizar Compra</button>
+
         </>
     )
 }

@@ -1,4 +1,4 @@
-import { createContext, useState } from "react";
+import { createContext, useEffect, useState } from "react";
 
 export const CartContext = createContext()
 
@@ -11,29 +11,42 @@ export const CartProvider = ({children})=>{
         const buscar = compra.find(comp => comp.id === buy.id)
 
         if (buscar === undefined) {
-            setCompra([...compra, buy]) //Agrega un producto NO existente al carrito
-        
-        }else{ //Modifica un producto EXISTENTE
+            setCompra([...compra, buy])
+            
+        }else{
          const nuevaCompra = compra.map((rep)=>{
             if (rep.id === buy.id) {
                 return{...rep, 
-                            quantity: (parseInt(rep.quantity) + parseInt(buy.quantity)),
-                            subTotal: (rep.subTotal + buy.subTotal)
+                            quantity: (ajustarCantidad(rep.stock,rep.quantity,buy.quantity)),
+                            subTotal: (ajustarTotal(rep.stock,rep.quantity,buy.quantity,buy.price))
                             }
-            }
-            return rep
-         }) 
+                }
+                return rep
+                           
+            }) 
          setCompra(nuevaCompra)  
+         
         }
-        setTotal(total + buy.subTotal)
-        setCantidadItems(cantidadItems + buy.quantity)
+        
     }
+    
+    useEffect(()=>{
+        let nuevoTotal = 0
+        let nuevaCantidad = 0
+
+        for (const item of compra) {
+            nuevoTotal = nuevoTotal + item.subTotal
+            nuevaCantidad = nuevaCantidad + item.quantity
+        }
+        setTotal(nuevoTotal)
+        setCantidadItems(nuevaCantidad)
+
+    },[compra])
     
     const removeItem = (item)=>{
         const newCart = compra.filter((comp)=> comp.id !== item.id)
         setCompra(newCart)
-        setTotal(total - item.subTotal)
-        setCantidadItems(cantidadItems - item.quantity)
+        
     }
 
     const clearCart = ()=>{
@@ -41,8 +54,33 @@ export const CartProvider = ({children})=>{
         setTotal(0)
         setCantidadItems(0)
     } 
-        
     
+    const ajustarCantidad = (stock,cant1,cant2)=>{
+        if ((cant1 + cant2) > stock ) {
+            return stock
+        }else{
+            if ((cant1 + cant2) >=  1) {
+                return cant1 + cant2
+            }else{
+                return 1
+            }
+        }
+    }
+
+    const ajustarTotal = (stock,cant1,cant2,price)=>{
+        if ((cant1 + cant2) > stock ) {
+            return stock * price
+        }else{
+            if ((cant1 + cant2) >=  1) {
+                return (cant1 + cant2)*price
+            }else{
+                return price
+            }
+        }
+    }
+    
+    
+
     return <CartContext.Provider value={{compra, agregar, removeItem, clearCart, total, cantidadItems}}>
         {children}
         </CartContext.Provider>

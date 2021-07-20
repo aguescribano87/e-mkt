@@ -7,8 +7,8 @@ a{
 
 .itemContainer{
     display: inline-block;
-    border-left: solid 5px black;
-    border-right: solid 5px black;
+    border-left: solid 5px lightgrey;
+    border-right: solid 5px lightgrey;
     background-color: white;
     width: 300px ;
     height: 340px ;
@@ -16,19 +16,22 @@ a{
     margin: 10px 5px;
     text-align: center;
     border-radius: 10px; 
+    transition: 0.5s;
 }
 .itemContainer:hover{
-    box-shadow: 2px 2px 2px rgb(59, 59, 59);
+    border-left: solid 5px black;
+    border-right: solid 5px black;
+    transition: 0.5s;
 }
 
 .img-container{
     display: inline-block;
-    width: 150px ;
-    height: 200px ;
+    width: 100% ;
+    height: 60% ;
     text-align: center;
 }
 .linea{
-    border: solid 1px black
+    border: solid 1px lightgrey
     
 }
 .img-container .imagen{
@@ -54,9 +57,10 @@ a{
 .precio{
     text-align:center;
     font-size: 30px;
-    font-style: italic;
+    color: #333333;
     font-weight: bold;
     font-family: monospace;
+       
     }
 
 

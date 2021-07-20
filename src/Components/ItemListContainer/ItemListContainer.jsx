@@ -47,7 +47,7 @@ export const ItemListContainer = ()=> {
        }
     },[id])
     
-    return item ? <div className="contenedor"> <ItemList items={item} /> </div> : <Loader/>
+    return <div className="contenedor-gral"> {item ? <div className="contenedor-items"> <ItemList items={item} /> </div> : <Loader/>} </div>
      
 }
 

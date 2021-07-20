@@ -31,7 +31,6 @@ function App() {
           <Route path="/checkout">
             <CheckOut />
           </Route>
-          
         </Switch>
       </>
     </Router>

@@ -3,11 +3,18 @@ body{
     background-color: #ebebeb;
     
 }
-.contenedor{
-    
+.contenedor-gral{
     display: inline-block;
     text-align: center;
     width: 100% ;
+    height: 100% ;
+}
+
+.contenedor-items{
+    
+    display: inline-block;
+    
+    width: 80% ;
     height: 100% ;
     margin: 0;
     
