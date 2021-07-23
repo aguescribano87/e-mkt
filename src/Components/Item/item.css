@@ -19,8 +19,8 @@ a{
     transition: 0.5s;
 }
 .itemContainer:hover{
-    border-left: solid 5px black;
-    border-right: solid 5px black;
+    border-left: solid 5px #37373f;
+    border-right: solid 5px #37373f;
     transition: 0.5s;
 }
 

@@ -1,0 +1,10 @@
+.categoria-item{
+    border-bottom: solid 2px #37373f;
+    font-weight: bold;
+    font-family:monospace;
+    font-style: unset;
+    font-size: 30px;
+    text-align: left;
+    margin-top: 5px;
+    color: #37373f;
+}

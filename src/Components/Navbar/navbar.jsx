@@ -3,8 +3,9 @@ import "./navbar.css"
 import {CartWidget} from "../CartWidjet/CartWidget"
 import {NavLink, Link} from "react-router-dom"
 
-function NavBar() {
-    const categorias = ["Teclados","Mouses","Auriculares"]
+export const categorias = ["Teclados","Mouses","Auriculares"]
+export const NavBar = ()=> {
+    
     return (
         
         <nav className="navbar">
@@ -25,4 +26,3 @@ function NavBar() {
     )
 }
 
-export {NavBar}
