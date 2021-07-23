@@ -4,16 +4,16 @@
 ![alt text](https://github.com/aguescribano87/e-mkt/blob/44c0e54b1a91da4ccc7b2e4c97cb9c2863eec861/src/img/Home.gif)
 
 # CATEGORIAS
-![alt text]()
+![alt text](https://github.com/aguescribano87/e-mkt/blob/eaf7204ce6a8f4ba550e73ca6415338456c6cbe8/src/img/Categorias.gif)
 
 # ITEM DETAIL
-![alt text]()
+![alt text](https://github.com/aguescribano87/e-mkt/blob/eaf7204ce6a8f4ba550e73ca6415338456c6cbe8/src/img/Item%20Detail.gif)
 
 # CARRITO
-![alt text]()
+![alt text](https://github.com/aguescribano87/e-mkt/blob/eaf7204ce6a8f4ba550e73ca6415338456c6cbe8/src/img/Carrito.gif)
 
 # CHECK-OUT
-![alt text]()
+![alt text](https://github.com/aguescribano87/e-mkt/blob/eaf7204ce6a8f4ba550e73ca6415338456c6cbe8/src/img/Check-out.gif)
 
 
 ### COMPONENTS ###
