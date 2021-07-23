@@ -1,5 +1,5 @@
 # HOME
-![alt text]("https://firebasestorage.googleapis.com/v0/b/e-mkt-aff75.appspot.com/o/Home.gif?alt=media&token=abae7545-92ae-4ae1-a11b-b4e72a3bc5b2")
+![alt text]("https://github.com/aguescribano87/e-mkt/blob/fdd36d1a5349457d1323ab2c2aeb2939074f9816/src/img/Home.gif")
 
 e-mkt es una tienda online dedicada a la venta de perifericos orientados al gaming
 
