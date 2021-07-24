@@ -6,13 +6,13 @@
 
 **-NavBar:** En el NavBar encontrado el Logo que al hacerle click nos lleva a la home de la página donde se pueden ver todos los productos, las Categorías que mediante un arreglo y un mapeo se pueden ver listadas una al lado de la otra, si clickeamos cualquiera de ellas nos va a filtrar los productos disponibles de cada categoría. También tenemos el Carrito que nos lleva a la ruta /cart donde podemos ver lo que tenemos agregado.
 
+![alt text](https://github.com/aguescribano87/e-mkt/blob/44c0e54b1a91da4ccc7b2e4c97cb9c2863eec861/src/img/Home.gif)
+
 **-ItemListConteiner:** Este componente se encarga de traer de nuestra base de datos (dataBase) todos nuestros productos y guardarlos en un estado para luego compartirlo con otros componentes mediante props, también hacemos filtros por categorías mediante el hook useParams que lo recibe del navBar y filtros por stock los productos con stock 0 no se mostraran en la página.
 
 **-ItemList:** Recibe mediante una prop (items) los productos traídos desde la base de datos por el componente anterior y se encarga de mapearlos al componente Item.
 
 **-Item:** Se encarga de mostrar las propiedades de cada producto (imagen, precio, título), al hacer click en un producto hace una ruta hacia el componente ItemDetailConteiner.
-
-![alt text](https://github.com/aguescribano87/e-mkt/blob/44c0e54b1a91da4ccc7b2e4c97cb9c2863eec861/src/img/Home.gif)
 
 ![alt text](https://github.com/aguescribano87/e-mkt/blob/eaf7204ce6a8f4ba550e73ca6415338456c6cbe8/src/img/Categorias.gif)
 
