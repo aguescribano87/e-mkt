@@ -2,6 +2,8 @@
 
 **Tienda online dedicada a la venta de perifericos para GAMERS**
 
+**Host** https://e-mkt-aff75.web.app
+
 ### COMPONENTS ###
 
 **-NavBar:** En el NavBar encontrado el Logo que al hacerle click nos lleva a la home de la página donde se pueden ver todos los productos, las Categorías que mediante un arreglo y un mapeo se pueden ver listadas una al lado de la otra, si clickeamos cualquiera de ellas nos va a filtrar los productos disponibles de cada categoría. También tenemos el Carrito que nos lleva a la ruta /cart donde podemos ver lo que tenemos agregado.
