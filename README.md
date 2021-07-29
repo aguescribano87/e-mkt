@@ -24,7 +24,7 @@
 
 **-ItemCount:** Este componente se ubica en la vista detallada del producto y se encarga de mostrarnos el stock disponible, un contador para agregar al carrito la cantidad de este producto el mínimo es 1 y el máximo que dejara es el stock y también un botón para agregar al carrito que le envía la compra al cartContext. Al agregar productos al carrito aparecerá un botón para finalizar la compra que este nos lleva al la vista del carrito.
 
-![alt text](https://github.com/aguescribano87/e-mkt/blob/eaf7204ce6a8f4ba550e73ca6415338456c6cbe8/src/img/Item%20Detail.gif)
+![alt text](https://github.com/aguescribano87/e-mkt/blob/046b0301182e2dd5d20f8349ad161a43a07049df/src/img/Item%20Detail.gif)
 
 **-Cart:** Aquí se pueden ver todos los productos agregados al carrito. Cada item cuenta con una imagen del producto, el título, un CartCounter, el sub-total y un botón para eliminarlo del carrito. Por debajo de los productos encontramos el LOGO que al hacer click nos lleva a la HOME, un botón para limpiar el carrito, y el botón comprar que nos lleva al CheckOut. Si no hay productos agregados al carrito muestra un mensaje que el carrito esta vacío y los botones anteriormente mencionados no estarán disponibles.
 
