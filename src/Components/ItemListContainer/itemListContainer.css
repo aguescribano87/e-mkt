@@ -1,22 +1,18 @@
-body{
+body {
     padding-top: 60px;
     background-color: #ebebeb;
-    
 }
-.contenedor-gral{
+
+.contenedor-gral {
     display: inline-block;
     text-align: center;
-    width: 100% ;
-    height: 100% ;
+    width: 100%;
+    height: 100%;
 }
 
-.contenedor-items{
-    
+.contenedor-items {
     display: inline-block;
-    
-    width: 80% ;
-    height: 100% ;
+    width: 80%;
+    height: 100%;
     margin: 0;
-    
 }
-

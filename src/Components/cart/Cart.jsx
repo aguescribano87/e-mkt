@@ -16,7 +16,7 @@ export const Cart = () => {
                     <p className="title-carrito">{comp.title}</p>
                     <p> <CartCounter item={comp} /> </p>
                     <p className="precio-carrito">{`$ ${comp.subTotal}`}</p>
-                    <img src={trash} alt="trash" onClick={() => removeItem(comp)} />
+                    <img className="papelera-carrito" src={trash} alt="trash" onClick={() => removeItem(comp)} />
                 </div>) : <p className="carrito-vacio">Tu CARRITO esta vacio hace "click" en nuestro logo para ver el catálogo</p>}
             <div className="contenedor-botones">
                 <Link to="/">

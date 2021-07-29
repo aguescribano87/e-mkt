@@ -1,9 +1,10 @@
-.contedor-check{
+.contedor-check {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
-.contenedor-usuario{
+
+.contenedor-usuario {
     display: flex;
     flex-direction: column;
     border: solid 1px black;
@@ -13,12 +14,14 @@
     margin: 0;
     float: left;
 }
-.contenedor-compra{
+
+.contenedor-compra {
     display: flex;
     flex-direction: column;
     width: 60%;
 }
-.contenedor-items-compra{
+
+.contenedor-items-compra {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -31,18 +34,17 @@
     background-color: white;
 }
 
-.img-compra{
+.img-compra {
     height: 60px;
     width: 60px;
     object-fit: contain;
 }
-.total-compra{
+
+.total-compra {
     float: right;
 }
 
-.boton-compra{
+.boton-compra {
     position: absolute;
-    margin-top:100px ;
+    margin-top: 100px;
 }
-
-

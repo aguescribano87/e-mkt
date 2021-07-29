@@ -1,66 +1,64 @@
-a{
+a {
     color: black;
     text-decoration: none;
     font-family: sans-serif;
     cursor: pointer;
 }
 
-.itemContainer{
+.itemContainer {
     display: inline-block;
     border-left: solid 5px lightgrey;
     border-right: solid 5px lightgrey;
     background-color: white;
-    width: 300px ;
-    height: 340px ;
+    width: 300px;
+    height: 280px;
     padding: 0;
     margin: 10px 5px;
     text-align: center;
-    border-radius: 10px; 
+    border-radius: 10px;
     transition: 0.5s;
 }
-.itemContainer:hover{
+
+.itemContainer:hover {
     border-left: solid 5px #37373f;
     border-right: solid 5px #37373f;
     transition: 0.5s;
 }
 
-.img-container{
+.img-container {
     display: inline-block;
-    width: 100% ;
-    height: 60% ;
+    width: 100%;
+    height: 60%;
     text-align: center;
+    border-bottom: solid 1px lightgrey;
 }
-.linea{
-    border: solid 1px lightgrey
-    
-}
-.img-container .imagen{
-    width: 100% ;
-    height: 100% ;
+
+.img-container .imagen {
+    width: 100%;
+    height: 100%;
     object-fit: contain;
-    
 }
 
-
-.titulo{
+.titulo {
+    width: 100%;
     display: -webkit-box;
     -webkit-box-orient: vertical;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: normal;
     -webkit-line-clamp: 1;
-    text-align:left;
+    text-align: left;
     font-size: 18px;
-    margin-left: 5px;
+    margin: 5px;
+    padding: 0;
 }
 
-.precio{
-    text-align:center;
+.precio {
+    margin: 15px 0 0 0;
+    padding: 5px;
+    text-align: center;
     font-size: 30px;
     color: #333333;
     font-weight: bold;
     font-family: monospace;
-       
-    }
-
-
+}

@@ -6,29 +6,28 @@ body {
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
 }
 
-button{
+button {
   background-color: black;
+  border: solid 1px transparent;
   cursor: pointer;
-  padding:8px;
+  padding: 8px;
   font-weight: bold;
   font-size: 15px;
   border-radius: 30px;
-  border: 0;
   color: white;
-  
+}
+
+button:hover {
+  background-color: white;
+  color: black;
+  border: solid 1px black;
   
 }
 
-button:hover{
-  background-color: white;
-  color: black;
-  
-}
-button:active{
+button:active {
   transform: scale(1.03, 1.03);
 }
 
@@ -36,6 +35,5 @@ button:disabled {
   color: rgba(16, 16, 16, 0.3);
   background-color: rgba(66, 66, 66, 0.3);
   border-color: rgba(118, 118, 118, 0.3);
-  cursor:default;
+  cursor: default;
 }
-
