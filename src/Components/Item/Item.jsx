@@ -10,8 +10,10 @@ export const Item = ({ items }) => {
                 <div className="img-container">
                     <img className="imagen" src={items.pictureUrl} alt="foto" />
                 </div>
-                <p className="titulo">{items.title}</p>
-                <p className="precio">${items.price}</p>
+                <div className="descript-container">
+                    <p className="titulo">{items.title}</p>
+                    <p className="precio">${items.price}</p>
+                </div>
             </div>
         </NavLink>
     )

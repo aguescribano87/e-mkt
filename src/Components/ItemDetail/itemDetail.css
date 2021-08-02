@@ -22,7 +22,7 @@
 }
 
 .detail-img {
-    width: 100%;
+    width: 80%;
     height: 100%;
     object-fit: contain;
 }
@@ -51,7 +51,10 @@
 }
 
 .detail-counter {
-    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 50%;
     height: 100%;
 }
 
@@ -67,4 +70,23 @@
     margin: 5px;
     padding: 10px 0;
     color: #37373f;
+}
+
+
+@media (max-width: 1050px){
+    .detail-conteiner{
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+    .detail-item{
+        flex-direction: column;
+    }
+    .detail-img{
+        width: 100%;
+    }
+    .detail-counter{
+        width: 100%;
+        margin-left: 5px;
+    }
 }

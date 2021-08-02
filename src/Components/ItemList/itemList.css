@@ -1,10 +1,13 @@
 .categoria-item {
+    background-color: #ebebeb;
     border-bottom: solid 2px #37373f;
     font-weight: bold;
     font-family: monospace;
     font-style: unset;
     font-size: 30px;
     text-align: left;
-    margin: 5px 0 5px 5px;
+    margin:0;
+    padding: 0;
     color: #37373f;
+    box-shadow: 0 4px 12px 0 rgb(0 0 0 / 7%), 0 2px 4px rgb(0 0 0 / 5%);
 }

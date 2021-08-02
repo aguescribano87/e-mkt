@@ -30,7 +30,10 @@ export const ItemDetail = ({ item }) => {
                     <div className="detail-counter">
                         <h1 className="detail-title">{item.title}</h1>
                         <p className="detail-price">${item.price}</p>
-                        {quantity ? <NavLink to="/cart"><button>Terminar Compra</button></NavLink> : <ItemCount onAdd={onAdd} stock={item.stock} initial={1} />}
+                        {quantity ?
+                            <div><NavLink to="/cart"><button>Terminar Compra</button></NavLink></div>
+                            :
+                            <div><ItemCount onAdd={onAdd} stock={item.stock} initial={1} /></div>}
                     </div>
                 </div>
                 <h2 className="detail-description-title">Descripción</h2>

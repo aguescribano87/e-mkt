@@ -1,8 +1,3 @@
-body {
-    padding-top: 60px;
-    background-color: #ebebeb;
-}
-
 .contenedor-gral {
     display: inline-block;
     text-align: center;
@@ -17,4 +12,10 @@ body {
     height: 100%;
     margin: 0;
     box-shadow: 0 4px 12px 0 rgb(0 0 0 / 7%), 0 2px 4px rgb(0 0 0 / 5%);
+}
+
+@media (max-width: 750px) {
+    .contenedor-items {
+        width: 90%;
+    }
 }
