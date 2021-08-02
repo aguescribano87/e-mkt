@@ -1,0 +1,11 @@
+.backgroundSideDrawer{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 900;
+    top: 34px;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+}

@@ -1,6 +1,7 @@
 .navbar {
   display: flex;
   justify-content: space-between;
+  flex-direction: row;
   align-items: center;
   background-color: lightgrey;
   position: fixed;
@@ -8,36 +9,35 @@
   top: 0px;
   left: 0px;
   border-bottom: solid 2px black;
-  
+  box-shadow: 0 4px 12px 0 rgb(0 0 0 / 7%), 0 2px 4px rgb(0 0 0 / 5%);
 }
 
-.navbar .menu{
-  padding: 0;
+.menu {
   display: flex;
   justify-content: center;
   align-items: center;
   list-style-type: none;
+  padding: 0;
 }
 
-.navbar .item{
+.item {
   margin: 0 4px;
-  font-family:monospace;
+  font-family: monospace;
   font-size: 17px;
   padding: 0 2px;
   border-bottom: solid 2px transparent;
   transition: 0.5s;
 }
 
-.item:hover{
+.item:hover, .item:active {
   border-bottom: solid 2px black;
   font-weight: bold;
   transition: 0.5s;
 }
 
-
-.navbar .logo{
+.logo {
   color: white;
-  font-family:monospace;
+  font-family: monospace;
   border-radius: 10px;
   margin: 0 5px;
   padding: 5px;
@@ -45,10 +45,14 @@
   transition: 1s;
 }
 
-.logo:hover{
+.logo:hover {
   color: black;
   background-color: white;
   transition: 1s;
 }
 
-
+@media (max-width: 750px) {
+  .menu {
+    display: none;
+  }
+}

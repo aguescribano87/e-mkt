@@ -1,0 +1,37 @@
+.sideDrawer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    background-color: #ffff;
+    top: 35px;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    width: 70%;
+    height: 100%;
+    z-index: 1000;
+    transform: translateX(-100%);
+    transition: transform 0.5s ease-out;
+    background-color: rgb(231, 231, 231);
+}
+
+.sideDrawer.open {
+    transform: translateX(0);
+}
+
+.item-sideDrawer {
+    margin: 10px 0;
+    text-decoration: none;
+    list-style: none;
+    font-family: monospace;
+    font-size: 17px;
+    padding: 0 2px;
+    border-bottom: solid 2px transparent;
+}
+
+.item-sideDrawer:hover, .item-sideDrawer:active {
+    border-bottom: solid 2px black;
+    font-weight: bold;
+    transition: 0.5s;
+  }

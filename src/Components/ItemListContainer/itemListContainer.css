@@ -11,8 +11,10 @@ body {
 }
 
 .contenedor-items {
+    background-color: #ffff;
     display: inline-block;
-    width: 80%;
+    width: 70%;
     height: 100%;
     margin: 0;
+    box-shadow: 0 4px 12px 0 rgb(0 0 0 / 7%), 0 2px 4px rgb(0 0 0 / 5%);
 }

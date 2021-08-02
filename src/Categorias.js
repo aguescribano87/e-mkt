@@ -1,0 +1,1 @@
+export const Categorias = ["Teclados", "Mouses", "Auriculares"].sort()
